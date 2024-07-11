@@ -12,12 +12,13 @@
     <div class="container">
         <div class="bathroom-container">
             <div class="bathroom-image-container">
-                <img src="./image/bathroom-1.png" alt="">
+                <img id="show-image" src="./image/bathroom-1.png" alt="">
             </div>
             <div id="btn-group">
-                <button>Bathroom 1</button>
-                <button>Bathroom 2</button>
-                <button>Bathroom 2</button>
+                <button class="image-button active" onclick="toggleImage('./image/bathroom-1.png', this)">Bathroom
+                    1</button>
+                <button class="image-button" onclick="toggleImage('./image/bathroom-2.png', this)">Bathroom 2</button>
+                <button class="image-button" onclick="toggleImage('./image/bathroom-3.png', this)">Bathroom 3</button>
             </div>
         </div>
     </div>
