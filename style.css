@@ -3,3 +3,71 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #26303A;
+    padding: 40px 0px;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.bathroom-container {
+    background-color: #2F4F6F;
+    width: 465px;
+    height: 435px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.bathroom-container::after {
+    content: 'After';
+    background-color: #26303A;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 0px 100px 100px 0px;
+    position: absolute;
+    top: 60%;
+}
+
+.bathroom-container::before {
+    content: 'Before';
+    background-color: #26303A;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 100px 0px 0px 100px;
+    position: absolute;
+    top: 60%;
+    right: 0;
+}
+
+.bathroom-image-container {
+    width: 100%;
+    height: 360px;
+}
+
+.bathroom-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+#btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+
+#btn-group button {
+    background-color: transparent;
+    border: 1px solid #4E5AF0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}
