@@ -10,15 +10,23 @@ const toggleImage = (src, button) => {
 };
 
 // Recent Projects js
-// Get all gallery items and previews
+// Get all gallery items and // Get all gallery items and previews
 const items = document.querySelectorAll(".gallery__item-wrapper");
 const previews = document.querySelectorAll(".gallery__preview-wrapper");
 
 // Function to update the preview area
 function updatePreview(selectedItem) {
   previews.forEach((preview) => {
-    preview.style.display =
-      preview.dataset.galleryItem === selectedItem ? "block" : "none";
+    preview.style.display = preview.dataset.galleryItem === selectedItem ? "block" : "none";
+    preview.style.animation = preview.dataset.galleryItem === selectedItem ? "image-fade-in .3s ease-in-out" : "image-fade-out .3s ease-in-out";
+  });
+
+  items.forEach((listItem) => {
+    if (listItem.dataset.itemsItem === selectedItem) {
+      listItem.classList.add("active");
+    } else {
+      listItem.classList.remove("active");
+    }
   });
 }
 
