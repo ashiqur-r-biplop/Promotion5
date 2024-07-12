@@ -1,90 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="bathroom-container">
-            <div class="bathroom-image-container">
-                <img id="show-image" src="./image/bathroom-1.png" alt="">
-            </div>
-            <div id="btn-group">
-                <button class="image-button active" onclick="toggleImage('./image/bathroom-1.png', this)">Bathroom
-                    1</button>
-                <button class="image-button" onclick="toggleImage('./image/bathroom-2.png', this)">Bathroom 2</button>
-                <button class="image-button" onclick="toggleImage('./image/bathroom-3.png', this)">Bathroom 3</button>
-            </div>
+      <div class="bathroom-container">
+        <div class="bathroom-image-container">
+          <img id="show-image" src="./image/bathroom-1.png" alt="" />
         </div>
+        <div id="btn-group">
+          <button
+            class="image-button active"
+            onclick="toggleImage('./image/bathroom-1.png', this)"
+          >
+            Bathroom 1
+          </button>
+          <button
+            class="image-button"
+            onclick="toggleImage('./image/bathroom-2.png', this)"
+          >
+            Bathroom 2
+          </button>
+          <button
+            class="image-button"
+            onclick="toggleImage('./image/bathroom-3.png', this)"
+          >
+            Bathroom 3
+          </button>
+        </div>
+      </div>
     </div>
     <!-- Recent Projects -->
     <div class="recent-project-section">
-        <div class="container">
-            <h2 class="section-title">Recent Projects </h2>
-            <div class="gallery__content">
+      <div class="container">
+        <div class="gallery__content">
+          <div class="gallery__items">
+            <div class="gallery__items-inner">
+              <div
+                class="gallery__item-wrapper"
+                data-items-item="1"
+                data-item=""
+              >
+                <div class="gallery__preview-overlay"></div>
+                <img
+                  src="//cdn2.leads.io/16285/screenshot-2022-11-25-at-161858.png"
+                  class="gallery__item"
+                />
+              </div>
+              <div
+                class="gallery__item-wrapper"
+                data-items-item="2"
+                data-item=""
+              >
+                <div class="gallery__preview-overlay"></div>
 
+                <img src="//cdn2.leads.io/16254/1.png" class="gallery__item" />
+              </div>
+              <div
+                class="gallery__item-wrapper"
+                data-items-item="3"
+                data-item=""
+              >
+                <div class="gallery__preview-overlay"></div>
 
-                <div class="gallery__items">
-                    <div class="gallery__item-wrapper" data-items-item="1" data-item="">
-                        <div class="gallery__preview-overlay"></div>
-                        <img src="//cdn2.leads.io/16285/screenshot-2022-11-25-at-161858.png" class="gallery__item">
-                    </div>
-                    <div class="gallery__item-wrapper" data-items-item="2" data-item="">
-                        <div class="gallery__preview-overlay"></div>
-
-                        <img src="//cdn2.leads.io/16254/1.png" class="gallery__item">
-                    </div>
-                    <div class="gallery__item-wrapper" data-items-item="3" data-item="">
-                        <div class="gallery__preview-overlay"></div>
-
-                        <img src="//cdn2.leads.io/16255/2.png" class="gallery__item">
-                    </div>
-                    <div class="gallery__item-wrapper" data-items-item="4" data-item="">
-                        <div class="gallery__preview-overlay"></div>
-                        <img src="//cdn2.leads.io/16256/3.png" class="gallery__item">
-                    </div>
-                    <div class="gallery__item-wrapper" data-items-item="5" data-item="">
-                        <div class="gallery__preview-overlay"></div>
-                        <img src="//cdn2.leads.io/24558/342385479-756873232641729-6134280763003548041-n.jpg?t=1682064768g"
-                            class="gallery__item">
-                    </div>
-                </div>
-                <div class="gallery__gallery">
-                    <div class="gallery__preview-wrapper" data-gallery-item="1" data-preview="">
-
-                        <img src="//cdn2.leads.io/16285/screenshot-2022-11-25-at-161858.png" class="gallery__preview">
-                    </div>
-                    <div class="gallery__preview-wrapper" data-gallery-item="2" data-preview="">
-
-
-                        <img src="//cdn2.leads.io/16254/1.png" class="gallery__preview">
-                    </div>
-                    <div class="gallery__preview-wrapper" data-gallery-item="3" data-preview="">
-
-                        <img src="//cdn2.leads.io/16255/2.png" class="gallery__preview">
-                    </div>
-                    <div class="gallery__preview-wrapper" data-gallery-item="4" data-preview="">
-
-                        <img src="//cdn2.leads.io/16256/3.png" class="gallery__preview">
-                    </div>
-                    <div class="gallery__preview-wrapper" data-gallery-item="5" data-preview="">
-
-
-                        <img src="//cdn2.leads.io/24558/342385479-756873232641729-6134280763003548041-n.jpg?t=1682064768g"
-                            class="gallery__preview">
-                    </div>
-                </div>
+                <img src="//cdn2.leads.io/16255/2.png" class="gallery__item" />
+              </div>
+              <div
+                class="gallery__item-wrapper last-image"
+                data-items-item="4"
+                data-item=""
+              >
+                <div class="gallery__preview-overlay"></div>
+                <img src="//cdn2.leads.io/16256/3.png" class="gallery__item" />
+              </div>
+              <div
+                class="gallery__item-wrapper last-image"
+                data-items-item="5"
+                data-item=""
+              >
+                <div class="gallery__preview-overlay"></div>
+                <img
+                  src="//cdn2.leads.io/24558/342385479-756873232641729-6134280763003548041-n.jpg?t=1682064768g"
+                  class="gallery__item"
+                />
+              </div>
             </div>
-
-
+            <div class="mobile">
+              <div
+                class="gallery__item-wrapper"
+                data-items-item="4"
+                data-item=""
+              >
+                <div class="gallery__preview-overlay"></div>
+                <img src="//cdn2.leads.io/16256/3.png" class="gallery__item" />
+              </div>
+              <div
+                class="gallery__item-wrapper"
+                data-items-item="5"
+                data-item=""
+              >
+                <div class="gallery__preview-overlay"></div>
+                <img
+                  src="//cdn2.leads.io/24558/342385479-756873232641729-6134280763003548041-n.jpg?t=1682064768g"
+                  class="gallery__item"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="gallery__gallery">
+            <div
+              class="gallery__preview-wrapper"
+              data-gallery-item="1"
+              data-preview=""
+            >
+              <img
+                src="//cdn2.leads.io/16285/screenshot-2022-11-25-at-161858.png"
+                class="gallery__preview"
+              />
+            </div>
+            <div
+              class="gallery__preview-wrapper"
+              data-gallery-item="2"
+              data-preview=""
+            >
+              <img src="//cdn2.leads.io/16254/1.png" class="gallery__preview" />
+            </div>
+            <div
+              class="gallery__preview-wrapper"
+              data-gallery-item="3"
+              data-preview=""
+            >
+              <img src="//cdn2.leads.io/16255/2.png" class="gallery__preview" />
+            </div>
+            <div
+              class="gallery__preview-wrapper"
+              data-gallery-item="4"
+              data-preview=""
+            >
+              <img src="//cdn2.leads.io/16256/3.png" class="gallery__preview" />
+            </div>
+            <div
+              class="gallery__preview-wrapper"
+              data-gallery-item="5"
+              data-preview=""
+            >
+              <img
+                src="//cdn2.leads.io/24558/342385479-756873232641729-6134280763003548041-n.jpg?t=1682064768g"
+                class="gallery__preview"
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
